@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Lato Regular ;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: Lato Bold ;
+    src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: Lato Italic;
+    src: url('../fonts/Lato-Italic.ttf');
+}
+@font-face {
+    font-family: Myriad Pro;
+    src: url('../fonts/MyriadPro.otf');
+}
+@font-face {
+    font-family: Georgia Italic;
+    src: url('../fonts/georgiai.ttf');
+}
+@font-face {
+    font-family: Georgia ;
+    src: url('../fonts/GeorgiaRegular.ttf');
+}
+#wrapper {
+    max-width: 1024px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+}
+.slider-carousel{
+    display: none;
+}
+header {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+header a {
+    text-decoration: none;
+    font-family: "Lato Regular";
+    line-height: 1;
+    font-size: 14px;
+    color: black;
+}
+
+header .header-left-side {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header .header-left-side-logo {
+    background-color: black;
+    padding: 15px;
+    margin-top: -15px;
+    color: white;
+}
+
+header .header-right-side {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-right-side input {
+    width: 80%;
+    visibility: hidden;
+}
+
+header .header-right-side a {
+    margin-top: 5px;
+}
+
+header .header-right-side .icon-search {
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: -5px;
+    margin-right: 35px;
+}
+
+hr {
+    width: 90%;
+}
+
+main p:first-child {
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 92px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 300px;
+}
+
+main p:nth-child(2) {
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    color: #a3a3a3;
+    margin-top: -60px;
+    margin-bottom: 300px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Lato Bold";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer a {
+    font-family: "Lato Regular";
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav-for-768px {
+    display: none;
+}
+
+.section-social-icons img {
+    border: 1px solid black;
+    margin-top: 25px;
+    padding: 10px;
+    height: 15px;
+    width: 13px;
+    margin-right: 15px;
+}
+
+.section-social {
+    border-left: 1px solid #a3a3a3;
+    padding-left: 10px;
+}
+
+.section-collection {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-shop, .section-site {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #a3a3a3;
+    padding-left: 10px;
+}
+
+@media (min-width: 1240px) {
+    body {
+        background-color: #e5e5e5;
+    }
+
+    #wrapper {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    header .header-right-side {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .header-left-side {
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .section-site, .section-shop, .section-collection, .slider, .main-checkText, nav {
+        display: none;
+    }
+
+
+    .nav-for-768px {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-for-768px a {
+        text-decoration: none;
+        margin-bottom: 20px;
+        font-family: "Lato Regular";
+        line-height: 1;
+        font-size: 14px;
+        color: black;
+    }
+
+    .section-social {
+        text-align: center;
+        border-left: 0;
+        width: 90%;
+        padding-top: 20px;
+        margin-top: 70px;
+    }
+
+    .section-social h3 {
+        letter-spacing: 2px;
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+    .section-social a {
+        font-size: 18px;
+        margin-bottom: 55px;
+    }
+    main p:first-child{
+        margin-top: 50px;
+    }
+    main p:nth-child(2){
+        margin-bottom: 50px;
+    }
+    main{
+        border-bottom: 1px solid #a3a3a3;
+    }
+}

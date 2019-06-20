@@ -1,0 +1,462 @@
+@font-face {
+    font-family: Lato Regular ;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato Bold ;
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lato Italic;
+    src: url('../fonts/Lato-Italic.ttf');
+}
+
+@font-face {
+    font-family: Georgia Italic;
+    src: url('../fonts/georgiai.ttf');
+}
+
+@font-face {
+    font-family: Georgia ;
+    src: url('../fonts/GeorgiaRegular.ttf');
+}
+
+#wrapper {
+    max-width: 1024px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+header a {
+    text-decoration: none;
+    font-family: "Lato Regular";
+    line-height: 1;
+    font-size: 14px;
+    color: black;
+}
+
+header .header-left-side {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header .header-left-side-logo {
+    background-color: black;
+    padding: 15px;
+    margin-top: -15px;
+    color: white;
+}
+
+header .header-right-side {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-right-side input {
+    width: 80%;
+    visibility: hidden;
+}
+
+header .header-right-side a {
+    margin-top: 5px;
+}
+
+header .header-right-side .icon-search {
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: -5px;
+    margin-right: 35px;
+}
+
+hr {
+    width: 90%;
+}
+
+.icon-search {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-basket {
+    width: 20px;
+    height: 20px;
+}
+
+.main-path {
+    margin-left: 50px;
+}
+
+.main-path a {
+    text-transform: uppercase;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    color: #606060;
+    text-decoration: none;
+}
+
+.main-path a:hover {
+    text-decoration: underline;
+}
+
+.main-names h2 {
+    font-family: "Lato Bold";
+    font-size: 34px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.main-names p {
+    font-family: "Georgia Italic";
+    font-size: 18px;
+    text-align: center;
+    color: #606060;
+    margin-top: -25px;
+    margin-bottom: 100px;
+}
+
+.div-table-small {
+    display: none;
+}
+
+.main-table {
+    display: none;
+}
+
+.table-row {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.table-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.table-head th:first-child, .table-image {
+    width: 150px;
+}
+
+.table-head {
+    margin: auto;
+    width: 90%;
+}
+
+.table-row-description {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.table-name h3 {
+    font-family: "Lato Bold";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.table-name p {
+    font-family: "Lato Italic";
+    font-size: 12px;
+    color: #606060;
+    margin-top: -10px;
+}
+
+.table-QTY input {
+    border: 0;
+    width: 25px;
+}
+
+.table-delete button {
+    background-color: white;
+    border: 0;
+    width: 15px;
+    height: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.table-head th:nth-child(2) {
+    width: 40%;
+    padding-left: 55px;
+}
+
+.table-head th:nth-child(5), .table-head th:nth-child(6), .table-head th:nth-child(7) {
+    text-align: right;
+}
+
+.table-name {
+    width: 48%;
+    text-align: left;
+}
+
+.table-row {
+    border-top: 1px solid #e5e5e5;
+}
+.table-row-price-delete{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+th {
+    text-align: left;
+    font-family: "Lato Regular";
+    color: #909090;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.table-QTY {
+    display: flex;
+    align-items: flex-start;
+}
+
+.table-QTY-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-QTY-buttons button {
+    height: 15px;
+    width: 25px;
+    border: 0;
+    background: #e5e5e5;
+}
+
+.main-subtotal {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: #e5e5e5;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.main-subtotal p {
+    font-family: "Lato Bold";
+    font-size: 14px;
+    margin-right: 10%;
+}
+
+.main-order {
+    margin-top: 50px;
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    margin-bottom: 130px;
+}
+
+.main-order a {
+    font-family: "Lato Regular";
+    font-size: 16px;
+    color: black;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.main-order button {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 55px;
+    background: #f68236;
+    color: white;
+    border: 0;
+}
+
+.main-order button:hover {
+    background: #e67429;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Lato Bold", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer a {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.nav-for-768px {
+    display: none;
+}
+
+.section-social-icons img {
+    border: 1px solid black;
+    margin-top: 25px;
+    padding: 10px;
+    height: 15px;
+    width: 13px;
+    margin-right: 15px;
+}
+
+.section-social {
+    border-left: 1px solid #a3a3a3;
+    padding-left: 10px;
+}
+
+.section-collection {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-shop, .section-site {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #a3a3a3;
+    padding-left: 10px;
+}
+
+.slider-carousel {
+    display: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+@media (min-width: 1240px) {
+    body {
+        background-color: #e5e5e5;
+    }
+
+    #wrapper {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    header .header-right-side {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .header-left-side {
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .section-site, .section-shop, .section-collection, .slider, .main-checkText, nav {
+        display: none;
+    }
+
+    .section-social {
+        text-align: center;
+        border-left: 0;
+    }
+
+    .section-social h3 {
+        letter-spacing: 2px;
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    .nav-for-768px {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-for-768px a {
+        text-decoration: none;
+        margin-bottom: 20px;
+        font-family: "Lato Regular";
+        line-height: 1;
+        font-size: 14px;
+        color: black;
+    }
+
+    .main-path {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .table-head {
+        display: none;
+    }
+
+    .table-name {
+
+    }
+
+    .main-order {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 90%;
+        margin-left: 25px;
+    }
+
+    .main-order button {
+        width: 70%;
+    }
+
+    .main-order {
+        margin-bottom: 80px;
+    }
+
+    .section-social {
+        border-top: 1px solid #a3a3a3;
+        width: 90%;
+        padding-top: 20px;
+
+    }
+    .table-row-description{
+        flex-direction: column;
+margin-bottom: 20px;
+    }
+    .table-row-price-delete{
+        text-align: right;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+        width: 30%;
+    }
+}
